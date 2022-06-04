@@ -1,0 +1,77 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vars: <http://purl.org/M4M-MIK-attempt1/variables/> .
+
+<http://ontology.deic.dk/cv/M4M-MIK-attempt1/> a skos:ConceptScheme;
+  dct:creator <https://orcid.org/0000-0002-0721-551X>, <https://orcid.org/0000-0002-6384-8944>,
+    <https://orcid.org/0000-0003-4093-2147>;
+  dct:description "Potato Blight disease observation"@en;
+  dct:rights <https://spdx.org/licenses/CC-BY-4.0.html>;
+  dct:title "Agro Ontology"@en;
+  pav:createdOn "2022-06-01T19:03:28Z"@en;
+  pav:lastUpdatedOn "2022-06-02T19:03:28Z"@en;
+  pav:version "0.0.1"@en;
+  skos:hasTopConcept <http://purl.org/M4M-MIK-attempt1/variables/>, vars:CountryCode,
+    vars:CropSeasonYear, vars:Disease, vars:GrowthStageName, vars:ObservationID, vars:SampleID,
+    vars:SeverityCategoryName .
+
+vars:SampleID a skos:Concept;
+  skos:definition "Number given to the sample after institutes nameing standard"@en;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:prefLabel "SampleID"@en;
+  skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1/> .
+
+vars:ObservationID a skos:Concept;
+  skos:definition "Running number"@en;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:prefLabel "ObservationID"@en;
+  skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1/> .
+
+vars:CropSeasonYear a skos:Concept;
+  skos:definition "4 digit number representing the year the disease was observed. Automatically created from the Blight Tracker App."@en;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:prefLabel "CropSeasonYear"@en;
+  skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1/> .
+
+vars:CountryCode a skos:Concept;
+  dct:source <https://www.iso.org/obp/ui/#search>;
+  skos:definition "2 char code as defined in the ISO standard ISO 3166-1 alpha-2 codes"@en;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:prefLabel "CountryCode"@en;
+  skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1/> .
+
+vars:GrowthStageName a skos:Concept;
+  dct:source <https://en.wikipedia.org/wiki/BBCH-scale_(potato)>;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:prefLabel "GrowthStageName"@en;
+  skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1/> .
+
+vars:SeverityCategoryName a skos:Concept;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:prefLabel "SeverityCategoryName"@en;
+  skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1/> .
+
+vars:Disease a skos:Concept;
+  skos:definition "Crop Disease name"@en;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:narrower vars:PotatoEarlyBlight, vars:PotatoLateBlight;
+  skos:prefLabel "Disease"@en;
+  skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1/> .
+
+vars:PotatoLateBlight a skos:Concept;
+  skos:broader vars:Disease;
+  skos:definition "Potato disease caused by the oomycete Phytophthora infestans"@en;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:prefLabel "PotatoLateBlight"@en .
+
+vars:PotatoEarlyBlight a skos:Concept;
+  skos:broader vars:Disease;
+  skos:definition "Potato disease caused by the fungus Alternaria solani"@en;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:prefLabel "PotatoEarlyBlight"@en .
+
+<http://purl.org/M4M-MIK-attempt1/variables/> a skos:Concept;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1/> .
