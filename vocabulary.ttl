@@ -1,34 +1,22 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vars: <http://purl.org/test2/variables/> .
 
-<http://purl.org/m4m-dk-3/variables/> a skos:ConceptScheme;
+<http://ontology.deic.dk/cv/DTUbib> a skos:Concept, skos:ConceptScheme;
   dct:creator "Hannah"@en;
-  dct:description "Test for showcase purposes"@en;
-  dct:title "Test2 vocabulary"@en;
-  skos:hasTopConcept <http://purl.org/test2/variables/>, vars:Computerscience, vars:Computerscientist,
-    vars:Test .
+  dct:description "Test Vocabulary for M4M workshop"@en;
+  dct:title "Vocab DTUbib"@en;
+  skos:hasTopConcept <http://ontology.deic.dk/cv/DTUbib>, <http://ontology.deic.dk/cv/DTUbibtest>,
+    <http://ontology.deic.dk/cv/DTUbibtest2>;
+  skos:inScheme <http://ontology.deic.dk/cv/DTUbib>;
+  skos:topConceptOf <http://ontology.deic.dk/cv/DTUbib> .
 
-vars:Test a skos:Concept;
-  skos:definition "Test for technical setup"@en;
-  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
-  skos:prefLabel "Test"@en;
-  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+<http://ontology.deic.dk/cv/DTUbibtest> a skos:Concept;
+  skos:inScheme <http://ontology.deic.dk/cv/DTUbib>;
+  skos:prefLabel "test"@en;
+  skos:topConceptOf <http://ontology.deic.dk/cv/DTUbib> .
 
-vars:Computerscientist a skos:Concept;
-  dct:source vars:Computerscience;
-  skos:definition "person that studied computerscience"@en;
-  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
-  skos:prefLabel "Computerscientist"@en;
-  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
-
-vars:Computerscience a skos:Concept;
-  skos:definition "studies of computers"@en;
-  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
-  skos:prefLabel "Computerscience"@en;
-  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
-
-<http://purl.org/test2/variables/> a skos:Concept;
-  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
-  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+<http://ontology.deic.dk/cv/DTUbibtest2> a skos:Concept;
+  skos:inScheme <http://ontology.deic.dk/cv/DTUbib>;
+  skos:prefLabel "test2"@en;
+  skos:topConceptOf <http://ontology.deic.dk/cv/DTUbib> .
