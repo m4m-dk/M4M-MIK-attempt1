@@ -1,47 +1,57 @@
-21:19:43.931  258  DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use output format : text/turtle
-21:19:43.935  262  DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use ModelWriter : fr.sparna.rdf.xls2rdf.OutputStreamModelWriter
-21:19:44.496  823  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Processing sheet: Sheet1
-21:19:44.501  828  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://ontology.deic.dk/cv/DTUbib
-21:19:44.502  829  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#
-21:19:44.503  830  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/pav/
-21:19:44.504  831  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/dc/terms/
-21:19:44.505  832  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/schema/qudt/
-21:19:44.506  833  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/vocab/unit/
-21:19:44.511  838  ERROR f.s.rdf.xls2rdf.ColumnHeaderParser - Unsuccessfull parsing of header parameters for header 'Date when vocabulary was initially created (follow https://en.wikipedia.org/wiki/ISO_8601)', Exception is java.lang.ArrayIndexOutOfBoundsException : Index 1 out of bounds for length 1
-21:19:44.513  840  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#prefLabel
-21:19:44.513  840  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/schema/qudt/unit
-21:19:44.514  841  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#altLabel
-21:19:44.514  841  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#definition
-21:19:44.515  842  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/dc/terms/source
-21:19:44.515  842  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#broader
-21:19:44.516  843  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#exactMatch
-21:19:44.516  843  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#closeMatch
-21:19:44.516  843  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#editorialNote
-21:19:44.516  843  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found at least 2 headers with proper property declaration in the first 10 columns, title row is at index 17
-21:19:44.517  844  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Found title row at index 17
-21:19:44.519  846  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "Vocab DTUbib" with lang en
-21:19:44.521  848  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "Test Vocabulary for M4M workshop" with lang en
-21:19:44.522  849  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "Hannah" with lang en
-21:19:44.523  850  ERROR f.s.rdf.xls2rdf.ColumnHeaderParser - Unsuccessfull parsing of header parameters for header 'Definition of terms (optionally properties)', Exception is java.lang.ArrayIndexOutOfBoundsException : Index 1 out of bounds for length 1
-21:19:44.523  850  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Converting data with these column headers: 
-21:19:44.524  851  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=Identifier, language=Optional.empty, datatype=Optional.empty, property=null, declaredProperty=Identifier, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=Identifier]
-21:19:44.527  854  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:prefLabel@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#prefLabel, declaredProperty=skos:prefLabel, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:prefLabel@en]
-21:19:44.527  854  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=qudt:unit(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://qudt.org/schema/qudt/unit, declaredProperty=qudt:unit, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=qudt:unit(separator=",")]
-21:19:44.528  855  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:altLabel(separator=";"), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#altLabel, declaredProperty=skos:altLabel, inverse=false, parameters={separator=;}, id=null, reconcileOn=null, headerCell=skos:altLabel(separator=";")]
-21:19:44.529  856  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:definition@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#definition, declaredProperty=skos:definition, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:definition@en]
-21:19:44.529  856  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:source(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/source, declaredProperty=dct:source, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:source(separator=",")]
-21:19:44.529  856  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:broader(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#broader, declaredProperty=skos:broader, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:broader(separator=",")]
-21:19:44.529  856  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:exactMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#exactMatch, declaredProperty=skos:exactMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:exactMatch(separator=",")]
-21:19:44.529  856  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:closeMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#closeMatch, declaredProperty=skos:closeMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:closeMatch(separator=",")]
-21:19:44.529  856  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:editorialNote@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#editorialNote, declaredProperty=skos:editorialNote, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:editorialNote@en]
-21:19:44.529  856  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:creator(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/creator, declaredProperty=dct:creator, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:creator(separator=",")]
-21:19:44.529  856  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:contributor(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/contributor, declaredProperty=dct:contributor, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:contributor(separator=",")]
-21:19:44.529  856  INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Converting rows...
-21:19:44.557  884  INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Applying SKOS post-processings on the result
-21:19:44.557  884  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Postprocessing : SkosPostProcessor
-21:19:44.558  885  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Considering main resource like a ConceptScheme.
-21:19:44.568  895  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding inverse skos:broader and skos:narrower
-21:19:44.570  897  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:inScheme
-21:19:44.571  898  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Setting rdf:type skos:ConceptScheme to main resource
-21:19:44.571  898  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:hasTopConcept / skos:topConceptOf
-21:19:44.572  899  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Saving graph of 18 statements generated from Sheet Sheet1
+21:31:31.485  339  DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use output format : text/turtle
+21:31:31.489  343  DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use ModelWriter : fr.sparna.rdf.xls2rdf.OutputStreamModelWriter
+21:31:32.093  947  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Processing sheet: Sheet1
+21:31:32.099  953  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/M4M-MIK-attempt1/variables/
+21:31:32.101  955  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#
+21:31:32.102  956  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/pav/
+21:31:32.104  958  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/dc/terms/
+21:31:32.105  959  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/schema/qudt/
+21:31:32.107  961  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/vocab/unit/
+21:31:32.115  969  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://orcid.org/0000-0002-6384-8944
+21:31:32.118  972  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://orcid.org/0000-0003-4093-2147
+21:31:32.120  974  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://orcid.org/0000-0002-0721-551X
+21:31:32.122  976  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://spdx.org/licenses/CC-BY-4.0.html
+21:31:32.125  979  ERROR f.s.rdf.xls2rdf.ColumnHeaderParser - Unsuccessfull parsing of header parameters for header 'Date when vocabulary was initially created (follow https://en.wikipedia.org/wiki/ISO_8601)', Exception is java.lang.ArrayIndexOutOfBoundsException : Index 1 out of bounds for length 1
+21:31:32.135  989  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#prefLabel
+21:31:32.136  990  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/schema/qudt/unit
+21:31:32.136  990  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#altLabel
+21:31:32.137  991  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#definition
+21:31:32.138  992  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/dc/terms/source
+21:31:32.139  993  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#broader
+21:31:32.140  994  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#exactMatch
+21:31:32.141  995  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#closeMatch
+21:31:32.142  996  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#editorialNote
+21:31:32.143  997  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found at least 2 headers with proper property declaration in the first 10 columns, title row is at index 20
+21:31:32.144  998  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Found title row at index 20
+21:31:32.148  1002 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "Agro Ontology" with lang en
+21:31:32.159  1013 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "Potato Blight disease observation" with lang en
+21:31:32.165  1019 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "https://orcid.org/0000-0002-6384-8944" with lang en
+21:31:32.165  1019 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "https://orcid.org/0000-0003-4093-2147" with lang en
+21:31:32.167  1021 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "https://orcid.org/0000-0002-0721-551X" with lang en
+21:31:32.168  1022 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "https://spdx.org/licenses/CC-BY-4.0.html" with lang en
+21:31:32.169  1023 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "0.0.1" with lang en
+21:31:32.171  1025 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "2022-06-01T19:03:28Z" with lang en
+21:31:32.172  1026 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "2022-06-02T19:03:28Z" with lang en
+21:31:32.173  1027 ERROR f.s.rdf.xls2rdf.ColumnHeaderParser - Unsuccessfull parsing of header parameters for header 'Definition of terms (optionally properties)', Exception is java.lang.ArrayIndexOutOfBoundsException : Index 1 out of bounds for length 1
+21:31:32.173  1027 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Converting data with these column headers: 
+21:31:32.173  1027 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=Identifier, language=Optional.empty, datatype=Optional.empty, property=null, declaredProperty=Identifier, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=Identifier]
+21:31:32.176  1030 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:prefLabel@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#prefLabel, declaredProperty=skos:prefLabel, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:prefLabel@en]
+21:31:32.177  1031 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=qudt:unit(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://qudt.org/schema/qudt/unit, declaredProperty=qudt:unit, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=qudt:unit(separator=",")]
+21:31:32.179  1033 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:altLabel(separator=";"), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#altLabel, declaredProperty=skos:altLabel, inverse=false, parameters={separator=;}, id=null, reconcileOn=null, headerCell=skos:altLabel(separator=";")]
+21:31:32.180  1034 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:definition@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#definition, declaredProperty=skos:definition, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:definition@en]
+21:31:32.180  1034 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:source(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/source, declaredProperty=dct:source, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:source(separator=",")]
+21:31:32.181  1035 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:broader(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#broader, declaredProperty=skos:broader, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:broader(separator=",")]
+21:31:32.182  1036 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:exactMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#exactMatch, declaredProperty=skos:exactMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:exactMatch(separator=",")]
+21:31:32.183  1037 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:closeMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#closeMatch, declaredProperty=skos:closeMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:closeMatch(separator=",")]
+21:31:32.184  1038 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:editorialNote@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#editorialNote, declaredProperty=skos:editorialNote, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:editorialNote@en]
+21:31:32.185  1039 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:creator(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/creator, declaredProperty=dct:creator, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:creator(separator=",")]
+21:31:32.187  1041 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:contributor(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/contributor, declaredProperty=dct:contributor, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:contributor(separator=",")]
+21:31:32.188  1042 INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Converting rows...
+21:31:32.231  1085 INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Applying SKOS post-processings on the result
+21:31:32.232  1086 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Postprocessing : SkosPostProcessor
+21:31:32.233  1087 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Considering main resource like a ConceptScheme.
+21:31:32.236  1090 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding inverse skos:broader and skos:narrower
+21:31:32.238  1092 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:inScheme
+21:31:32.240  1094 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Setting rdf:type skos:ConceptScheme to main resource
+21:31:32.240  1094 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:hasTopConcept / skos:topConceptOf
+21:31:32.243  1097 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Saving graph of 68 statements generated from Sheet Sheet1

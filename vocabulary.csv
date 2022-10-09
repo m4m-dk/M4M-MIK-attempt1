@@ -1,6 +1,6 @@
-ConceptScheme URI,http://ontology.deic.dk/cv/DTUbib,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers if they are properly configured and managed.,,,,,,,,,,@
+ConceptScheme URI,http://ontology.deic.dk/cv/M4M-MIK-attempt1/,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers if they are properly configured and managed.,,,,,,,,,,@
 "Prefixes for controlled vocabularies, schema and ontologies"
-PREFIX,vars,http://ontology.deic.dk/cv/DTUbib,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
+PREFIX,vars,http://purl.org/M4M-MIK-attempt1/variables/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
 PREFIX,pav,http://purl.org/pav/ ,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
 PREFIX,dct,http://purl.org/dc/terms/ ,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
@@ -8,25 +8,30 @@ PREFIX,qudt,http://qudt.org/schema/qudt/,"Prefix for ""Quantity, Unit, Dimension
 PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
 Metadata about vocabulary
 
-dct:title,Vocab DTUbib,Title of the vocabulary
-dct:description,Test Vocabulary for M4M workshop,Description of the controlled vocabulary
-dct:creator,Hannah
-dct:rights,,License under which the vocabulary is provided
-pav:version,,Vocabulary version
-pav:createdOn,,Date when vocabulary was initially created (follow https://en.wikipedia.org/wiki/ISO_8601)
-pav:lastUpdatedOn,,Date of the last vocabulary update
+dct:title,Agro Ontology,Title of the vocabulary
+dct:description,Potato Blight disease observation,Description of the controlled vocabulary
+dct:creator,https://orcid.org/0000-0002-6384-8944,Minka Karaivanova
+dct:creator,https://orcid.org/0000-0003-4093-2147,Eva Overby Bach
+dct:creator,https://orcid.org/0000-0002-0721-551X,Ying Wang
+dct:creator
+dct:rights,https://spdx.org/licenses/CC-BY-4.0.html,License under which the vocabulary is provided
+pav:version,0.0.1,Vocabulary version
+pav:createdOn,2022-06-01T19:03:28Z,Date when vocabulary was initially created (follow https://en.wikipedia.org/wiki/ISO_8601)
+pav:lastUpdatedOn,2022-06-02T19:03:28Z,Date of the last vocabulary update
 Definition of terms (optionally properties)
 
 Identifier,skos:prefLabel@en,"qudt:unit(separator="","")","skos:altLabel(separator="";"")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vars:test,test
-vars:test2,test2
-vars:
-vars:
-vars:
-vars:
-vars:
-vars:
-vars:
+vars:SampleID,SampleID,,,Number given to the sample after institutes nameing standard
+vars:ObservationID,ObservationID,,,Running number
+vars:CropSeasonYear,CropSeasonYear,,,4 digit number representing the year the disease was observed. Automatically created from the Blight Tracker App.
+vars:CountryCode,CountryCode,,,2 char code as defined in the ISO standard ISO 3166-1 alpha-2 codes ,"https://www.iso.org/obp/ui/#search
+
+"
+vars:GrowthStageName,GrowthStageName,,,,https://en.wikipedia.org/wiki/BBCH-scale_(potato)
+vars:SeverityCategoryName,SeverityCategoryName
+vars:Disease,Disease,,,Crop Disease name
+vars:PotatoLateBlight,PotatoLateBlight,,,Potato disease caused by the oomycete Phytophthora infestans,,vars:Disease
+vars:PotatoEarlyBlight,PotatoEarlyBlight,,,Potato disease caused by the fungus Alternaria solani,,vars:Disease
 vars:
 vars:
 vars:
