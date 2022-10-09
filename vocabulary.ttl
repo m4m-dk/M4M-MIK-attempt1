@@ -56,7 +56,7 @@ vars:SeverityCategoryName a skos:Concept;
 vars:Disease a skos:Concept;
   skos:definition "Crop Disease name"@en;
   skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
-  skos:narrower vars:PotatoEarlyBlight, vars:PotatoLateBlight;
+  skos:narrower vars:PotatoEarlyBlight, vars:PotatoLateBlight, vars:PotatoMIK;
   skos:prefLabel "Disease"@en;
   skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1/> .
 
@@ -71,6 +71,12 @@ vars:PotatoEarlyBlight a skos:Concept;
   skos:definition "Potato disease caused by the fungus Alternaria solani"@en;
   skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
   skos:prefLabel "PotatoEarlyBlight"@en .
+
+vars:PotatoMIK a skos:Concept;
+  skos:broader vars:Disease;
+  skos:definition "Potato disease just made up by MIK in order to experiment new vocab"@en;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;
+  skos:prefLabel "PotatoMIK"@en .
 
 <http://purl.org/M4M-MIK-attempt1/variables/> a skos:Concept;
   skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1/>;

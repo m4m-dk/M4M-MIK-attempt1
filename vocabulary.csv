@@ -32,7 +32,7 @@ vars:SeverityCategoryName,SeverityCategoryName
 vars:Disease,Disease,,,Crop Disease name
 vars:PotatoLateBlight,PotatoLateBlight,,,Potato disease caused by the oomycete Phytophthora infestans,,vars:Disease
 vars:PotatoEarlyBlight,PotatoEarlyBlight,,,Potato disease caused by the fungus Alternaria solani,,vars:Disease
-vars:
+vars:PotatoMIK,PotatoMIK,,,Potato disease just made up by MIK in order to experiment new vocab,,vars:Disease
 vars:
 vars:
 vars:
