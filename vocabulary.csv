@@ -13,7 +13,7 @@ dct:description,Potato Blight disease observation,Description of the controlled 
 dct:creator,https://orcid.org/0000-0002-6384-8944,Minka Karaivanova
 dct:creator,https://orcid.org/0000-0003-4093-2147,Eva Overby Bach
 dct:creator,https://orcid.org/0000-0002-0721-551X,Ying Wang
-dct:creator,,zzzz
+dct:creator,https://orcid.org/0000-0002-0721-551X,Zzzz Zzz
 dct:rights,https://spdx.org/licenses/CC-BY-4.0.html,License under which the vocabulary is provided
 pav:version,0.0.1,Vocabulary version
 pav:createdOn,2022-06-01T19:03:28Z,Date when vocabulary was initially created (follow https://en.wikipedia.org/wiki/ISO_8601)
