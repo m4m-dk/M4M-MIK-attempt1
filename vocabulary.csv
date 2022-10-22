@@ -1,4 +1,4 @@
-ConceptScheme URI,http://ontology.deic.dk/cv/M4M-MIK-attempt1/,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers if they are properly configured and managed.,,,,,,,,,,@
+ConceptScheme URI,http://ontology.deic.dk/cv/M4M-MIK-attempt1,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers if they are properly configured and managed.,,,,,,,,,,@
 "Prefixes for controlled vocabularies, schema and ontologies"
 PREFIX,vars,http://purl.org/M4M-MIK-attempt1/variables/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
