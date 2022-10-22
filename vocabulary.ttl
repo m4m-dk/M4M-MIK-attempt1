@@ -5,8 +5,7 @@
 @prefix vars: <http://purl.org/M4M-MIK-attempt1/variables/> .
 
 <http://ontology.deic.dk/cv/M4M-MIK-attempt1> a skos:ConceptScheme;
-  dct:creator <https://orcid.org/0000-0001-5725-8297>, <https://orcid.org/0000-0002-6384-8944>,
-    <https://orcid.org/0000-0003-4093-2147>;
+  dct:creator <https://orcid.org/0000-0002-6384-8944>, <https://orcid.org/0000-0003-4093-2147>;
   dct:description "Potato Blight disease observation"@en;
   dct:rights <https://spdx.org/licenses/CC-BY-4.0.html>;
   dct:title "Agro Ontology"@en;
@@ -56,7 +55,7 @@ vars:SeverityCategoryName a skos:Concept;
 vars:Disease a skos:Concept;
   skos:definition "Crop Disease name"@en;
   skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1>;
-  skos:narrower vars:PotatoEarlyBlight, vars:PotatoLateBlight, vars:PotatoMIK;
+  skos:narrower vars:PotatoEarlyBlight, vars:PotatoLateBlight, vars:PotatoMIK, vars:PotatoSecondMIK;
   skos:prefLabel "Disease"@en;
   skos:topConceptOf <http://ontology.deic.dk/cv/M4M-MIK-attempt1> .
 
@@ -77,6 +76,13 @@ vars:PotatoMIK a skos:Concept;
   skos:definition "Potato disease just made up by MIK in order to experiment new vocab"@en;
   skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1>;
   skos:prefLabel "PotatoMIK"@en .
+
+vars:PotatoSecondMIK a skos:Concept;
+  dct:source <https://en.wikipedia.org/wiki/Potato>;
+  skos:broader vars:Disease;
+  skos:definition "Yet another potato disease, poor potato"@en;
+  skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1>;
+  skos:prefLabel "SecondMIKPotato"@en .
 
 <http://purl.org/M4M-MIK-attempt1/variables/> a skos:Concept;
   skos:inScheme <http://ontology.deic.dk/cv/M4M-MIK-attempt1>;

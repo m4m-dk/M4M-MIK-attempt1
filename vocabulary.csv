@@ -11,7 +11,6 @@ Metadata about vocabulary
 dct:title,Agro Ontology,Title of the vocabulary
 dct:description,Potato Blight disease observation,Description of the controlled vocabulary
 dct:creator,https://orcid.org/0000-0002-6384-8944,Minka Karaivanova
-dct:creator,https://orcid.org/0000-0001-5725-8297,Hannah Random Found
 dct:creator,https://orcid.org/0000-0003-4093-2147,Eva Overby Bach
 dct:rights,https://spdx.org/licenses/CC-BY-4.0.html,License under which the vocabulary is provided
 pav:version,0.0.1,Vocabulary version
@@ -32,7 +31,7 @@ vars:Disease,Disease,,,Crop Disease name
 vars:PotatoLateBlight,PotatoLateBlight,,,Potato disease caused by the oomycete Phytophthora infestans,,vars:Disease
 vars:PotatoEarlyBlight,PotatoEarlyBlight,,,Potato disease caused by the fungus Alternaria solani,,vars:Disease
 vars:PotatoMIK,PotatoMIK,,,Potato disease just made up by MIK in order to experiment new vocab,,vars:Disease
-vars:
+vars:PotatoSecondMIK,SecondMIKPotato,,,"Yet another potato disease, poor potato",https://en.wikipedia.org/wiki/Potato,vars:Disease
 vars:
 vars:
 vars:
