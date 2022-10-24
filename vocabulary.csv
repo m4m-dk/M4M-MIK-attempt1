@@ -11,6 +11,7 @@ Metadata about vocabulary
 dct:title,Agro Ontology,Title of the vocabulary
 dct:description,Potato Blight disease observation,Description of the controlled vocabulary
 dct:creator,https://orcid.org/0000-0002-6384-8944,Minka Karaivanova
+dct:creator,https://orcid.org/0000-0002-0454-4289,Hannah Mihai
 dct:creator,https://orcid.org/0000-0003-4093-2147,Eva Overby Bach
 dct:rights,https://spdx.org/licenses/CC-BY-4.0.html,License under which the vocabulary is provided
 pav:version,0.0.1,Vocabulary version

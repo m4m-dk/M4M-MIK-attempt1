@@ -5,7 +5,8 @@
 @prefix vars: <http://purl.org/M4M-MIK-attempt1/variables/> .
 
 <http://ontology.deic.dk/cv/M4M-MIK-attempt1> a skos:ConceptScheme;
-  dct:creator <https://orcid.org/0000-0002-6384-8944>, <https://orcid.org/0000-0003-4093-2147>;
+  dct:creator <https://orcid.org/0000-0002-0454-4289>, <https://orcid.org/0000-0002-6384-8944>,
+    <https://orcid.org/0000-0003-4093-2147>;
   dct:description "Potato Blight disease observation"@en;
   dct:rights <https://spdx.org/licenses/CC-BY-4.0.html>;
   dct:title "Agro Ontology"@en;
